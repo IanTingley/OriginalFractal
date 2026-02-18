@@ -1,10 +1,9 @@
 void setup(){
   size(600,600);
-  Fractal(300,300, 600, (int)(Math.random()*256));
 }
 
 void draw(){
-
+  Fractal(300,300, 600, (int)(Math.random()*256));
 }
 
 void Fractal(int x, int y, int size, int myColor){
@@ -14,3 +13,4 @@ void Fractal(int x, int y, int size, int myColor){
     Fractal(x,y, size-4, myColor-1);
   }
 }
+
