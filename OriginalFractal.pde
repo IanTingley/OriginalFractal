@@ -7,11 +7,10 @@ void draw(){
 
 }
 
-void Fractal(int x, int y, int size, int myColor){
-  circle(x, y, size);
-  if(size>10){
+void Fractal(int x, int y, int siz, int myColor){
+  ellipse(x, y, siz, siz);
+  if(siz>10){
     fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
-    Fractal(x,y, size-4, myColor-1);
+    Fractal(x,y, siz-4, myColor-1);
   }
 }
-
